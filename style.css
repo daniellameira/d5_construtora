@@ -114,10 +114,10 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
 /* Define a largura do container do formulário */
 #contato .form-container {
     max-width: 600px; /* Largura máxima */
-    margin: 0 auto;   /* Centraliza */
+    margin: 0 auto; /* Centraliza */
 }
 textarea.form-control {
-    min-height: 150px; /* Altura mínima */
+    min-height: 100px; /* Altura mínima */
 }
 
 .hero-section {
@@ -144,9 +144,6 @@ textarea.form-control {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.form-control:invalid {
-    border-color: #dc3545;
-}
 .form-control:valid {
     border-color: #28a745;
 }
@@ -159,32 +156,13 @@ textarea.form-control {
     transition: all 0.3s ease;
     display: inline-flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
 }
 
 .btn-instagram:hover {
     background: linear-gradient(45deg, #E1306C, #C13584, #833AB4, #5851DB, #405DE6);
     transform: translateY(-2px);
     box-shadow: 0 4px 15px rgba(225, 48, 108, 0.3);
-}
-
-/* Ajuste para mobile */
-@media (max-width: 768px) {
-    .btn-instagram {
-        width: 100%;
-        margin-top: 10px;
-    }
-}
-
-/* Adicione ao CSS */
-.btn-instagram-pulse {
-    animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-    100% { transform: scale(1); }
 }
 
 .btn-instagram i {
