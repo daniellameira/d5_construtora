@@ -1,0 +1,119 @@
+/* Estilo do Hero Section */
+.hero-section {
+    background: url('imagens/logo-bg.png') no-repeat center center/cover;
+    height: 100vh;
+    color: rgb(255, 255, 255);
+    padding-top: 80px; /* Compensa a navbar fixa */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.393);
+}
+
+/* Botão do WhatsApp */
+.whatsapp-btn {
+    background-color: #25D366;
+    border: none;
+}
+
+.whatsapp-btn:hover {
+    background-color: #128C7E;
+}
+
+/* Ajustes de espaçamento */
+section {
+    padding: 80px 0;
+}
+
+:root {
+    --cor-primaria: #242121d9;   /* Azul profissional (como o da Peaseguros) */
+    --cor-secundaria: #22e63f; /* verde (destaque para botões) */
+    --cor-texto: #000000;         /* Cinza escuro para textos */
+    --cor-fundo: #f9f9f9;      /* Fundo claro */
+}
+
+/* Aplicando as cores */
+body {
+    color: var(--cor-texto);
+    background-color: var(--cor-fundo);
+}
+
+.navbar {
+    background-color: var(--cor-primaria) !important;
+}
+
+.btn-primary, .whatsapp-btn {
+    background-color: var(--cor-secundaria);
+    border: none;
+}
+
+.btn-primary:hover, .whatsapp-btn:hover {
+    background-color: #22e63f; /* Laranja mais escuro no hover */
+    opacity: 0.9;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .navbar-brand {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+#galeria img {
+    transition: transform 0.3s;
+}
+
+#galeria img:hover {
+    transform: scale(1.03);
+}
+
+/* Efeito de zoom suave nas imagens */
+.card img, #galeria img {
+    transition: transform 0.3s ease;
+}
+
+.card:hover img, #galeria img:hover {
+    transform: scale(1.05);
+}
+
+/* Sombreamento suave nos cards */
+.card {
+    transition: box-shadow 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Altera a cor dos links do menu para branco */
+.navbar-nav .nav-link {
+    color: white !important;
+}
+
+/* Altera a cor do menu no modo mobile (toggler) */
+.navbar-toggler {
+    border-color: white !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+.navbar-nav .nav-link:hover {
+    opacity: 0.8;
+    transform: translateY(-2px); /* Efeito de levantar */
+    transition: all 0.3s ease;
+}
+
+/* Ajusta a largura dos inputs e textarea */
+#contato .form-control {
+    max-width: 100%; /* Garante responsividade */
+    width: 100%;     /* Opcional: largura total dentro do container */
+}
+
+/* Define a largura do container do formulário */
+#contato .form-container {
+    max-width: 600px; /* Largura máxima */
+    margin: 0 auto;   /* Centraliza */
+}
+textarea.form-control {
+    min-height: 150px; /* Altura mínima */
+}
