@@ -172,3 +172,139 @@ textarea.form-control {
 .btn-instagram:hover i {
     transform: rotate(10deg) scale(1.2);
 }
+/* Estilo Geral da Seção */
+.construcoes-residenciais {
+    background-color: #f9f9f9;
+    padding: 3rem 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Título */
+.construcoes-residenciais h2 {
+    font-size: 2rem;
+    color: #2a5a78;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+/* Texto de Destaque */
+.destaque {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* Lista de Benefícios */
+.lista-beneficios {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto 2rem auto;
+    max-width: 800px;
+}
+
+.lista-beneficios li {
+    padding: 0.8rem 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: flex-start;
+}
+
+.lista-beneficios li:last-child {
+    border-bottom: none;
+}
+
+.icone {
+    color: #2a5a78;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Botão de CTA (Call to Action) */
+.cta {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #2a5a78;
+    color: white !important;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+/* Responsividade */
+@media (max-width: 768px) {
+    .construcoes-residenciais h2 {
+        font-size: 1.5rem;
+    }
+    
+    .destaque, .lista-beneficios li {
+        font-size: 0.95rem;
+    }
+}
+/* Estilo Geral da Seção */
+.reformas {
+    background-color: #f5faf6; /* Verde claro suave */
+    padding: 3rem 0;
+}
+
+/* Cores Temáticas */
+.reformas h2 {
+    color: #27ae60; /* Verde profissional */
+}
+
+.reformas .botao {
+    background-color: #27ae60;
+    position: absolute ;
+    
+}
+
+.reformas .botao:hover {
+    background-color: #219653;
+}
+/* Estilo Geral da Seção */
+.obras-comerciais {
+    background-color: #fff;
+     position: absolute; 
+top: 1000px;
+    padding: 3rem 0;
+    padding-bottom: 100px;
+    border-top: 1px solid #eee; /* Separa visualmente das outras seções */
+}
+
+/* Aproveita as mesmas classes do CSS anterior (container, h2, destaque, lista-beneficios, icone, cta, botao) */
+
+/* Opcional: Destaque diferente para diferenciar da seção residencial */
+.obras-comerciais h2 {
+    color: #d35400; /* Laranja profissional (ou use a cor do branding) */
+}
+
+.obras-comerciais .botao {
+    background-color: #d35400;
+     position: absolute;
+     top: 1000px; 
+    padding-bottom: 100px;
+}
+
+.obras-comerciais .botao:hover {
+    background-color: #a04000;
+     position: absolute; 
+     top: 1000px;
+    padding-bottom: 100px;
+}
